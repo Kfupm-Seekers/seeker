@@ -80,7 +80,7 @@ export default function Crousal() {
                                         <CardSlider imageSlider={path.image} leftTitle={path.lTitle} leftDescription={path.lDescription} />
                                     </div>
                                     <div className='col-sm-6 col-md-6 col-lg-6 col-xl-6 align-self-center' style={style}>
-                                        <CardDescription rightTitle={path.rTitle} rightDescription={path.rDescription} />
+                                        <CardDescription rightTitle={path.rTitle} rightDescription={path.rDescription} pathID={path._id} />
                                     </div>
                                     <div className='offset-lg-1 offset-xl-1'></div>
                                 </div>
