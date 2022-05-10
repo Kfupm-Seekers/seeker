@@ -13,7 +13,8 @@ export default function CardDescription(props) {
 
     let navigate = useNavigate(); 
     const routeChange = () =>{ 
-      let path = `/questions`; 
+      let path = `/questions?id=${props.pathID}`; 
+      if(props.pathID == "62790623775c478196e8da1a")
       navigate(path);
     }
 

@@ -26,7 +26,7 @@ export default function App() {
         config.headers.Authorization = token;
         return config;
     });
-	const questions = ["what is data exploration? ", "what is data exploration? ", "what does QMV process involves? "]
+	const questions = ["what is data exploration?", "what is Multivariate Graphical tecknique?", "what does QMV process involves? "]
 
     return (
         //  help us go to the page by put the name in search ex: ../favourites
@@ -54,7 +54,7 @@ export default function App() {
                 <Route path="/*" element={<Navigate to={"/"} />}></Route>
                 <Route path="/register" element={<Register />}></Route>
 				<Route path="/questions" element={
-				<div style={{ backgroundColor: "#ECF0F3" }}>
+				<div style={{ backgroundColor: "#edf0f4" , height:"100%",display:"flex", justifyContent:"space-around",alignItems:"center"}}>
 				<Questions questions={questions}/>
 				</div>
 				}></Route> 
