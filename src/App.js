@@ -26,7 +26,7 @@ export default function App() {
         config.headers.Authorization = token;
         return config;
     });
-	const questions = ["what is data exploration? ", "what is data exploration? ", "what does QMV process involves? "]
+	const questions = ["what is data exploration?", "what is Multivariate Graphical tecknique?", "what does QMV process involves? "]
 
     return (
         //  help us go to the page by put the name in search ex: ../favourites
