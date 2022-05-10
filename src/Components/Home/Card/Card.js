@@ -34,7 +34,7 @@ export default class Card extends Component {
 
                     <div className="row">
                         <div className="col-lg-12">
-                            <div className="section-title text-center"><span className="subtitle">Visit my portfolio and keep your feedback</span>
+                            <div className="section-title text-center"><span className="subtitle"></span>
                                 <h2 className="title mb-5">Cources</h2>
                             </div>
                         </div>

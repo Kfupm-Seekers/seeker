@@ -1,5 +1,6 @@
 import Card from 'react-bootstrap/Card'
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 
 export default function CardDescription(props) {
 
@@ -8,6 +9,12 @@ export default function CardDescription(props) {
         backgroundColor: "#EAEEF1",
         borderRadius: "10px",
 
+    }
+
+    let navigate = useNavigate(); 
+    const routeChange = () =>{ 
+      let path = `/questions`; 
+      navigate(path);
     }
 
     return (
@@ -20,7 +27,7 @@ export default function CardDescription(props) {
                         {props.rightDescription}
                     </Card.Text>
                 </Card.Body>
-                <button className='Enroll-btn' >Enroll In</button>
+                <button className='Enroll-btn' onClick={routeChange}> Enroll In</button>
             </Card>
         </div>
     )
