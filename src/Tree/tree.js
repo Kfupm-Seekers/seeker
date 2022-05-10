@@ -7,7 +7,9 @@ function Tree() {
   return (
     <div className="tree ">
   
-  // center div
+
+    {/* center div */}
+    
   <div className="tree-center">
     <h4 className='heading'>Job Experience</h4>
   <TreeElement className="treeElement"

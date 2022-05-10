@@ -87,8 +87,15 @@ function Questions(props) {
 				courseID: courseID
 			};
 			
-			var dataToSent = new FormData();
-			dataToSent.append( "json", JSON.stringify( payload ) );
+			var dataToSent = JSON.stringify({
+
+				sent1: sent1,
+				sent2: answer,
+				courseID: courseID
+			
+			  })
+			// var dataToSent = new FormData();
+			// dataToSent.append( "json", JSON.stringify( payload ) );
 			
 			// fetch("http://localhost:80/postdatatoFlask",
 			// {
@@ -105,14 +112,22 @@ function Questions(props) {
 
 
 			// const fetchAnser = () => {
-				axios.put("http://localhost:80/postdatatoFlask", dataToSent).then((response) => {
-					console.log(response.data.courses);
+				axios.put("http://localhost:80/postdatatoFlask", dataToSent,
+				{
+					headers: {
+					'Content-Type': 'application/json'
+					}
+
+				}
+				).then((response) => {
+					console.log(response.data);
 					if(nextQuestion == 1){
-						setScore1(response)
+						setScore1(response.data)
 					}else
-						setScore2(response)
+						setScore2(response.data)
 					// setScore2(response);
 				});
+				console.log("axios call", dataToSent)
 			// };
 
 			
@@ -121,15 +136,16 @@ function Questions(props) {
 			// console.log(answer)
 		} else {
 			let answer = document.getElementById('textid').value
-			
-			var payload = {
-				sent1: "process involves setting up ways of collecting and understanding data",
+
+				var dataToSent = JSON.stringify({
+
+					sent1: "process involves setting up ways of collecting and understanding data",
 				sent2: answer,
 				courseID: "6278f2ca7100a3af2d75e31f"
-			};
+				
+				  })
 
-			var dataToSent = new FormData();
-			dataToSent.append( "json", JSON.stringify( payload ));
+
 			
 			// fetch("http://localhost:80/postdatatoFlask",
 			// {
@@ -142,9 +158,16 @@ function Questions(props) {
 			// 	return res.json(); })
 
 			// const fetchAnser = () => {
-				axios.put("http://localhost:80/postdatatoFlask", dataToSent).then((response) => {
-					console.log(response.data.courses);
-					setScore3(response)
+				axios.put("http://localhost:80/postdatatoFlask", dataToSent,
+				{
+					headers: {
+					'Content-Type': 'application/json'
+					}
+
+				}
+				).then((response) => {
+					console.log(response.data);
+					setScore3(response.data)
 				});
 			// };
 
