@@ -18,6 +18,10 @@ import FavouritePage from "./FavouritePage";
 import BookmarkPage from "./BookmarkPage";
 import Profile from "./Components/Home/Profile/Profile";
 import Questions from "./question/Questions";
+import AdminPage from "./admin/AdminPage";
+import Logout from "./logout";
+import PathTree from "./Tree/PathTree";
+import Tree from "./Tree/tree";
 export default function App() {
 
 
@@ -59,7 +63,14 @@ export default function App() {
 				</div>
 				}></Route> 
                 <Route path="/profile" element={<Profile/>} />
-   
+				<Route path="/admin" element={
+								<div style={{ backgroundColor: "#ECF0F3" }}>
+				<AdminPage/>
+				</div>
+				} />
+	
+				<Route path="/logout" element={<Logout />}></Route>
+				<Route path="/pathtree" element={<Tree />}></Route>
             </Routes>
         </Router>
     );

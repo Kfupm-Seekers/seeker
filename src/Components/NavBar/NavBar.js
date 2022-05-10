@@ -1,16 +1,18 @@
-import React from 'react'
-// import { Router } from 'react-router-dom';
-// import { BrowserRouter,Switch,Route,NavLink} from "react-router-dom"
-// import ReactDOM from 'react-dom';
-// import Navbar3 from './Navbar3';
-import './NavBar.css';
-import { Auth0Context, useAuth0 } from "@auth0/auth0-react";
 
-// import './App33.css';
+import './NavBar.css';
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 export default function NavBar() {
   
+  var logged = false;
+
+  useEffect(() => {
+    if (localStorage.getItem("token")) {
+       logged = true;
+    }
+});
 
 
 
@@ -29,8 +31,10 @@ export default function NavBar() {
             <li><a href="/">Home</a></li>
             <li><a href="/courses">Courses | Paths</a></li> 
             <li><a href="/profile">Profile</a></li>
-
+            
             <li><a  href="/register">Register</a></li>
+
+            <li><a  href="/logout">Logout</a></li>
 
           
             {/* <li><a href="#"></a></li> */}

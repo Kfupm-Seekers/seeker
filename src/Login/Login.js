@@ -19,7 +19,12 @@ function Login() {
                 console.log(response.data);
                 if (response?.data?.message == "Success login") {
                     localStorage.setItem("token", response.data.data.token);
+                    if (email.includes("@admin.com")) {
+                    navigate("/admin");
+                    }
+                    else{
                     navigate("/");
+                    }
                 }
             })
             .catch(() => {

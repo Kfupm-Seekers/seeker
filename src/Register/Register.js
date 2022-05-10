@@ -104,6 +104,8 @@ className="border rounded form-control-lg d-sm-flex d-xl-flex flex-fill justify-
             id="registerName"
           
           />
+
+
        
 </div>
 </div>
@@ -232,8 +234,12 @@ className="border rounded form-control-lg d-sm-flex d-xl-flex flex-fill justify-
         >
           Register
         </button>
-</div>
 
+</div>
+<div className="d-flex justify-content-center" style={{marginTop:"15px"}}>
+
+<a href="/login" class="btn  btn-primary active d-sm-flex d-md-flex justify-content-sm-center justify-content-md-center">Login?</a>
+</div>
 
 </div>
       </form>
