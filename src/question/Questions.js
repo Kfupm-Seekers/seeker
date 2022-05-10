@@ -174,9 +174,11 @@ function Questions(props) {
 			{showScore ? (
 				<div className='score-section' >
 				<br />
+
 				<span style={{color:"white"}}>	You scored ({score1}) out of 1 for the first question. </span><br /><br />
 				<span style={{color:"white"}}>	You scored ({score2}) out of 1 for the second question. </span><br /><br />
 				<span style={{color:"white"}}>	You scored ({score3}) out of 1 for the third question.</span> <br /><br />
+
 					<div className='d-flex justify-content-end' style={{width:"100%"}}>
 
           <button className='Enroll-btn MyBtn2' style={{boxShadow:"0px 0px 0px 0px #ebebeb"}}>Submit</button>
@@ -190,7 +192,9 @@ function Questions(props) {
 						</div>
 						<div className='question-text'> 	<span style={{color:"white",fontSize:"large"}}> {props.questions[currentQuestion]}</span></div>
 					</div>
+
 					<textarea className='textarea2' id= "textid" name="textTaken" placeholder='Right what you know' ></textarea>
+
 				<div className='answer-section d-flex justify-content-end ' >
 					<div className='d-flex justify-content-end'>
 							<button style={{boxShadow:"0px 0px 0px 0px #ebebeb"}} className='Enroll-btn MyBtn2' onClick={() => handleAnswerOptionClick()}>Next</button>
