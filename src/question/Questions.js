@@ -204,7 +204,7 @@ function Questions(props) {
 
 					<div className='d-flex justify-content-end' style={{width:"100%"}}>
 
-          <button className='Enroll-btn MyBtn2' style={{boxShadow:"0px 0px 0px 0px #ebebeb"}}>Submit</button>
+          <a className='Enroll-btn MyBtn2' href="/bookmarks" style={{boxShadow:"0px 0px 0px 0px #ebebeb"}}>Submit</a>
           </div>
 				</div>
 			) : (

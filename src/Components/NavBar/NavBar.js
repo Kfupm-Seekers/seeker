@@ -39,61 +39,6 @@ export default function NavBar() {
   </Navbar>
 
 
-//  <nav className="navbar">
-//         <div className="navbar-container collapse navbar-collapse container">
-
-//           <img src="images/seeker.jpeg" width={150} />
-//           <ul className="menu-items">
-           
-//             <li><a href="/">Home</a></li>
-//             <li><a href="/courses">Courses | Paths</a></li> 
-//             <li><a href="/profile">Profile</a></li>
-            
-//             <li><a  href="/register">Register</a></li>
-
-//             <li><a  href="/logout">Logout</a></li>
-
-          
-//             {/* <li><a href="#"></a></li> */}
-//           </ul>
-//         </div>
-//       </nav>
-
-// // <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-// <a class="navbar-brand" href="#">Live-Post</a>
-
-// <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-
-// <span class="navbar-toggler-icon"></span>
-
-// </button>
-
-
-
-// <div class="collapse navbar-collapse" id="navbarColor01">
-
-// <ul class="navbar-nav mr-auto" style="width: 100%; display: flex; justify-content: end;">
-
-
-
-// <li  className="nav-item"><a href="/">Home</a></li>
-//             <li  className="nav-item"><a class="nav-link" href="/courses">Courses | Paths</a></li> 
-//             <li  className="nav-item"><a class="nav-link" href="/profile">Profile</a></li>
-            
-//             <li  className="nav-item"><a class="nav-link" href="/register">Register</a></li>
-
-//             <li  className="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
-
-
-// </ul>
-
-
-
-// </div>
-
-// </nav>
-
     
   )
 }
