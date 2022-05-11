@@ -283,3 +283,7 @@ li.dropdown {
         display: none;
     }
 }
+
+.navbar-nav{
+    width: 100%; display: flex; justify-content: end;
+}
