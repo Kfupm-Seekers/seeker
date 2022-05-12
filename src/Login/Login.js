@@ -69,11 +69,11 @@ function Login() {
                         <div class="col-12 col-md-6 col-lg-6 col-xl-3 d-flex d-xl-flex justify-content-center justify-content-xl-center"
                              style={{width: "240.5px"}}><label
                             class="col-form-label text-start d-sm-flex d-lg-flex justify-content-sm-center justify-content-lg-start align-items-lg-center justify-content-xl-center align-items-xl-center"
-                            style={{fontSize: "32px",color: "var(--bs-light)"}}><strong>User Name</strong></label></div>
+                            style={{fontSize: "32px",color: "var(--bs-light)"}}><strong>Email</strong></label></div>
                         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex d-sm-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-xl-center">
                             <input class="border rounded form-control-lg d-sm-flex d-xl-flex flex-fill justify-content-sm-center justify-content-xl-center align-items-xl-center"
                                    type="text" style={{width: "235px",height: "25px",padding: "33px 2px",margin: "5px"}}
-                                   placeholder="  Enter User Name" required="" name="userName"
+                                   placeholder="  Enter Email " required="" name="userName"
 
 
                                 value={email}
